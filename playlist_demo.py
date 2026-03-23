@@ -104,11 +104,15 @@ def get_songs():
         {"name": "AM Remix", "artist": "Nio Garcia", "album": "Single"},
         {"name": "Travesuras", "artist": "Nio Garcia", "album": "Single"},
         {"name": "Infiel", "artist": "Nio Garcia", "album": "Single"},
-        {"name": "Te Boté", "artist": "Nio Garcia", "album": "Single"}
+        {"name": "Te Boté", "artist": "Nio Garcia", "album": "Single"},
+        {"name": "Todo de Ti", "artist": "Rauw Alejandro", "album": "Vice Versa"},
+        {"name": "Desesperados", "artist": "Rauw Alejandro", "album": "Vice Versa"},
+        {"name": "Punto 40", "artist": "Rauw Alejandro", "album": "Single"},
+        {"name": "Tattoo", "artist": "Rauw Alejandro", "album": "Afrodisíaco"}
     ]
 
 
-@profile
+#@profile
 def create_playlist() -> LinkedList:
     playlist = LinkedList()
 
@@ -121,11 +125,11 @@ def create_playlist() -> LinkedList:
         playlist.insert_at_end(Node(song))
 
 
-    end_time = time.time()
+ #   end_time = time.time()
 
 
-    total_time = end_time - start_time
+ #   total_time = end_time - start_time
 
-    print(f"\nTiempo de carga (end - start): {end_time:.6f} - {start_time:.6f} = {total_time:.6f} segundos")
+  #  print(f"\nTiempo de carga (end - start): {end_time:.6f} - {start_time:.6f} = {total_time:.6f} segundos")
 
     return playlist
